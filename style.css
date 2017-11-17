@@ -1,0 +1,78 @@
+
+body {
+    margin: 0px;
+    font-family: 'PT Serif', serif;
+    background-color: #191919;
+    min-width: 700px;
+}
+* { margin: 0px; padding: 0px; outline: none;}
+
+.wrapper {
+  display: block;
+  width: 600px;
+  margin-right: auto; margin-left: auto;
+}
+
+#head {
+  position: relative;
+  height: 180px;
+  background-color: white;
+}
+#login {
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #d02626;
+  padding: 7px; padding-left: 12px; padding-right: 12px;
+  border-radius: 20px;
+}
+#login:hover {
+  text-decoration: underline;
+}
+#logo {
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  top: 30px;
+  height: 60px;
+  text-align: center;
+}
+#head h1 {
+  font-size: 28px;
+  position: relative;
+  top: 110px;
+  text-align: center;
+  color: #2C3E50;
+}
+
+#head h2 span {
+  font-size: 24px;
+}
+
+
+#projects {
+  color: #2C3E50;
+  padding-top: 50px;
+  padding-bottom: 80px;
+  background-color: #f2f2f2;
+}
+#projects h1 {
+  text-align: center;
+  font-size: 30px;
+}
+
+
+
+.thumbnail {
+  display: inline-block;
+  background-color: white;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.thumbnail>h1 {
+  font-size: 10px;
+}
