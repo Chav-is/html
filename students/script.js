@@ -44,6 +44,7 @@ var projectsJSON = '{\n' +
 	'      "lastName": "Doe",\n' +
 	'      "gradYear": "2210",\n' +
 	'      "advisor": "John Doe 2",\n' +
+	'	   "about": "This is all about me John doe is the best person you have every seen, I made everything you ever wanted, just like that! *snaps*",\n' +
 	'      "projects": [\n' +
 	'        {\n' +
 	'          "id": "1",\n' +
@@ -62,6 +63,7 @@ var projectsJSON = '{\n' +
 	'      "lastName": "Doe",\n' +
 	'      "gradYear": "2210",\n' +
 	'      "advisor": "John Doe 2",\n' +
+	'	   "about": "This is all about me!!!!",\n' +
 	'      "projects": [\n' +
 	'        {\n' +
 	'          "id": "1",\n' +
@@ -76,27 +78,33 @@ var projectsJSON = '{\n' +
 	'    }\n' +
 	'  ]\n' +
 	'}\n';
-var projectsJson = JSON.parse(projectsJSON);
+console.log(projectsJSON);
+var profileJson = JSON.parse(projectsJSON);
+
 function loadProfile() {
-	var projectAmount = projectsJson.profiles[getParameterByName('uid')].projects.length;
-	var projects = projectsJson.profiles[getParameterByName('uid')].projects;
+	var projectAmount = profileJson.profiles[getParameterByName('uid')].projects.length;
+	var projects = profileJson.profiles[getParameterByName('uid')].projects;
+	var aboutInfo = profileJson.profiles[getParameterByName('uid')].about;
 	console.log(projectAmount);
-	$('.name').html(projectsJson.profiles[getParameterByName('uid')].firstName + ' ' + projectsJson.profiles[getParameterByName('uid')].lastName);
+	$('.name').html(profileJson.profiles[getParameterByName('uid')].firstName + ' ' + profileJson.profiles[getParameterByName('uid')].lastName);
 	$('#project-cards').html('');
 	for (var i = 0; i < projectAmount; i++) {
-		$('#project-cards').append('<div class="card horizontal hoverable">\n' +
-			'            <div class="card-image center" style="padding-left: 10px; margin-top: 10px;">\n' +
-			'                <img width="86" height="86" src="https://maxcdn.icons8.com/Share/icon/Logos//google_logo1600.png">\n' +
-			'                <h6>' + projects[i].name + '</h6>\n' +
-			'            </div>\n' +
-			'            <div class="card-stacked">\n' +
-			'                <div class="card-content">\n' +
-			'                    <p>' + projects[i].desc + '</p>\n' +
-			'                    <a href="#" style="margin-top: 40px;" class="btn red waves-effect">Go</a>\n' +
-			'                </div>\n' +
-			'            </div>\n' +
-			'        </div>')
+		$('#project-cards').append('' +
+			'<div class="card horizontal hoverable">\<n></n>' +
+			'	<div class="card-image center" style="padding-left: 10px; margin-top: 10px;">\<n></n>' +
+			'		<img width="86" height="86" src="https://maxcdn.icons8.com/Share/icon/Logos//google_logo1600.png">\n' +
+			'   	<h6>' + projects[i].name + '</h6>\<n></n>' +
+			'	</div>\n' +
+			'	<div class="card-stacked">\n' +
+			'       <div class="card-content">\n' +
+			'       	<p>' + projects[i].desc + '</p>\n' +
+			'           <a href="#" style="margin-top: 40px;" class="btn red waves-effect">Go</a>\n' +
+			'       </div>\n' +
+			'   </div>\n' +
+			'</div>'
+		);
 	}
+	$('#about').val(aboutInfo)
 }
 
 function submitEdit() {
