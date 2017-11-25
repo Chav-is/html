@@ -7,83 +7,46 @@ body {
 }
 * { margin: 0px; padding: 0px; outline: none;}
 
-.wrapper {
-  display: block;
-  width: 600px;
-  margin-right: auto; margin-left: auto;
-}
-
-#head {
+#logo {
   position: relative;
-  height: 180px;
+  height: 34px;
+  top: 12px;
+}
+#head {
+  display: block;
+  height: 60px;  
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  text-align: center;
   background-color: white;
 }
 #login {
-  font-size: 20px;
+  text-decoration: none;  
+  display: block;
+  position: absolute;
+  height: 100%;
+  top: 0px;
+  right: 0px;
+}
+#login>div {
+  box-sizing: border-box;
+  height: 100%;  
+  color: #191919;
   font-weight: bold;
-  cursor: pointer;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  color: #d02626;
-  padding: 7px; padding-left: 12px; padding-right: 12px;
-  border-radius: 20px;
+  background-color: white;
+  padding: 18px;
+  padding-right: 24px; padding-left: 24px;
+  transition-duration: 0.2s;
 }
-#login:hover {
-  text-decoration: underline;
-}
-#logo {
-  width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  position: absolute;
-  top: 30px;
-  height: 60px;
-  text-align: center;
-}
-#head h1 {
-  font-size: 28px;
-  position: relative;
-  top: 110px;
-  text-align: center;
-  color: #2C3E50;
-}
-
-#head h2 span {
-  font-size: 24px;
+#login:hover>div {
+  color: white;  
+  background-color: #D31633;  
 }
 
 
 #projects {
-  color: #2C3E50;
-  padding-top: 50px;
-  padding-bottom: 80px;
-  background-color: #f2f2f2;
-}
-#projects h1 {
-  text-align: center;
-  font-size: 30px;
-}
-
-#students {
-  color: #2C3E50;
-  padding-top: 50px;
-  padding-bottom: 80px;
-  background-color: #f2f2f2;
-}
-#students h1 {
-  text-align: center;
-  font-size: 30px;
-}
-
-
-
-.thumbnail {
-  display: inline-block;
-  background-color: white;
-  padding: 20px;
-  box-sizing: border-box;
-}
-.thumbnail>h1 {
-  font-size: 10px;
+  height: 800px;
+  background-color: #191919;
 }

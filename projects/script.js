@@ -9,12 +9,6 @@ $(document).ready(function () {
   });
 
 
-  // Initialize editor
-  $('.block').click(function(e){
-    $(e.target).prepend("<a>Saving changes...</a>");
-  });
-
-
   // Decode page that was clicked
   $(document).on('click', "a.pageTitle", function(e) {
     loadPage(pageData,$(e.target).text());
@@ -30,7 +24,7 @@ $(document).ready(function () {
     });
   });
 
-
+  
 
 });
 
