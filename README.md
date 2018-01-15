@@ -1,2 +1,0 @@
-# studentcorner-frontend
-# studentcorner-frontend
