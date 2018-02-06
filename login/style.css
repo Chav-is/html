@@ -9,17 +9,12 @@ body {
 * { margin: 0px; padding: 0px; outline: none; text-decoration: none; vertical-align: top}
 
 .wrapper {
-  box-sizing: border-box;
-  padding: 40px;
   width: 100%;
   max-width: 1000px;
   height: 100%;
   margin-left: auto;
   margin-right: auto;
   position: relative;
-}
-#projects {
-  padding: 0px;
 }
 #logo {
   display: inline-block;
@@ -28,13 +23,6 @@ body {
   height: 30px;
   margin-right: 16px;
   margin-left: 5px;
-}
-#bigLogo {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  height: 50px;
-  text-align: center;
 }
 #head {
   font-size: 0px;
@@ -51,9 +39,6 @@ body {
   transform-origin: top;
   transition-duration: 0.3s;
   min-width: 510px;
-}
-#head .wrapper {
-  padding: 0px;
 }
 #head:hover {
   background-color: white;
@@ -72,10 +57,6 @@ body {
 #head a>div:hover {
   background-color: #F5F6F7;
 }
-#head a:last-of-type>div {
-  position: absolute;
-  right: 0px;
-}
 
 
 
@@ -85,8 +66,8 @@ h1 {
   font-weight: normal;
 }
 p {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 0px;
+  padding-bottom: 40px;
   font-size: 18px;
   color: #333538;
   max-width: 600px;
@@ -104,80 +85,22 @@ p {
 
 
 
-#welcome {
+form input {
+  box-sizing: content-box;
+  width: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4px;
   background-color: #F5F6F7;
-  padding-bottom: 50px;
-}
-#welcome h1 {
-  padding-top: 50px;
-  padding-bottom: 0px;
-}
-
-
-.projectContainer {
-  padding: 0px;
-  padding-bottom: 50px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 30px;
-  grid-auto-rows: minmax(100px, auto);
-}
-@media screen and (max-width: 750px) {
-  .projectContainer {
-    grid-template-columns: 1fr;
-  }
-  #projects {
-    padding: 40px;
-  }
-  #head a:last-of-type>div {
-    position: absolute;
-    right: 8px;
-  }
-}
-
-
-
-.projectThumb {
-  background-color: white;
-  cursor: pointer;
-  transition-duration: 0.3s;
-}
-.projectThumb h1 {
-  padding: 6px;
-  padding-bottom: 0px;
-  padding-top: 0px;
-  margin-top: 10px;
+  border: none;
+  padding: 14px;
+  font-size: 18px;
   color: #333538;
-  font-size: 22px;
-}
-.projectThumb:hover h1 {
-  text-decoration: underline;
-  color: #D31633;
-}
-.projectThumb p {
-  padding: 6px;
-  padding-top: 6px;
-  color: #333538;
-  font-size: 16px;
 }
 
-
-.projectImage {
-  height: 200px;
-  background-size: cover;
-  background-position: center;
-}
-
-#credit {
-  padding: 70px;
-}
-#credit p {
-  padding: 2px;
-  font-size: 16px;
-  color: #B1B3B8;
-  text-align: center;
-}
-#credit a {
-  color: #B1B3B8;
-  text-decoration: underline;
+form input[type="submit"] {
+  background-color: #D31633;
+  color: white;
+  margin-top: 18px;
 }

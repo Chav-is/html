@@ -29,13 +29,6 @@ body {
   margin-right: 16px;
   margin-left: 5px;
 }
-#bigLogo {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  height: 50px;
-  text-align: center;
-}
 #head {
   font-size: 0px;
   z-index: 1;

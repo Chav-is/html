@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+    <g id="Rectangle-7" serif:id="Rectangle 7" transform="matrix(1,0,0,1,61.9032,40)">
+        <path d="M-6.724,120C-20.333,120 -28.158,120 -35.982,112.176C-43.806,104.351 -43.806,96.527 -43.806,82.917L-43.806,37.083C-43.806,23.473 -43.806,15.649 -35.982,7.824C-28.158,0 -20.333,0 -6.724,0L82.917,0C96.527,0 104.351,0 112.176,7.824C120,15.649 120,23.473 120,37.083L120,82.917C120,96.527 120,104.351 112.176,112.176C104.351,120 96.527,120 82.917,120L-6.724,120Z" style="fill:none;stroke:rgb(177,179,185);stroke-width:10px;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,-15.3862,-10.511)">
+        <path d="M115.386,89.574L115.386,131.448" style="fill:none;stroke:rgb(177,179,185);stroke-width:10px;stroke-linecap:round;stroke-miterlimit:1.5;"/>
+    </g>
+    <g transform="matrix(6.12323e-17,1,-1,6.12323e-17,210.511,-15.3862)">
+        <path d="M115.386,89.574L115.386,131.448" style="fill:none;stroke:rgb(177,179,185);stroke-width:10px;stroke-linecap:round;stroke-miterlimit:1.5;"/>
+    </g>
+</svg>

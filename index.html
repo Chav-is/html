@@ -1,16 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
     <title>Student Corner</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width = 480">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans|PT+Sans+Caption|PT+Serif" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="jq.js"></script>
     <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
 
@@ -18,7 +14,7 @@
 
     <div id="head">
       <div class="wrapper">
-        <a href="/"><div><img id="logo" src="logo.svg">Student Corner</div></a>
+        <a href="/"><div class="waves-effect waves-dark"><img id="logo" src="logo.svg">Student Corner</div></a>
         <a href="/projects"><div>Projects</div></a>
         <a href="/students"><div>Students</div></a>
         <a href="/login"><div>Login</div></a>
@@ -26,16 +22,47 @@
     </div>
 
 
-    <div class="card">
-      <div class="wrapper">
-        <h1>Featured Projects</h1>
-        <div class="row">
-          <div class="col s6 project">
-          </div>
+    <div class="wrapper" id="welcome">
+
+      <h1 class="title">Welcome to Student Corner</h1>
+      <p>A place for students to create beautiful displays of their projects and share knowledge with their peers.</p>
+
+    </div>
+
+
+    <div class="wrapper" id="projects">
+      <h1 class="title">Featured Projects</h1>
+      <div class="projectContainer">
+        <div class="projectThumb">
+          <div class="projectImage" style="background-image: url(https://i.amz.mshcdn.com/NHfE0DccfgKr6m7wmb3j8JIxu8s=/1200x630/2017%2F08%2F03%2F42%2F7d3635aaf7284678bf27ef7c4b77abf7.04d6b.jpg);"></div>
+          <h1>Solar Panel Cleaning Robot</h1>
+          <p>Optimize energy collection and minimize the effort of taking care of solar panels.</p>
+        </div>
+        <div class="projectThumb">
+          <div class="projectImage" style="background-image: url(http://robohub.org/wp-content/uploads/2015/10/starleth_quadruped_robot_bioinspired.jpg);"></div>
+          <h1>Quadrapedal Mutlijointed Robot</h1>
+          <p>This robot walks on four legs, each of which has joints in the feet and knees to move in a fluid motion.</p>
+        </div>
+        <div class="projectThumb">
+          <div class="projectImage" style="background-image: url(https://media.wired.com/photos/592681148d4ebc5ab806a815/master/w_5324,c_limit/GettyImages-520635093-1.jpg);"></div>
+          <h1>Autonomous Drone Mapping</h1>
+          <p>A drone that autotmatically flies within its parameters to create a 3D map of an area.</p>
         </div>
       </div>
     </div>
 
+
+    <div class="wrapper" id="welcome">
+
+      <h1 class="title">About Us</h1>
+      <p>Our mission at student corner is to help students show their amazingness and also share their knowlege on how they became amazing with other people so they can become amazing also.</p>
+
+    </div>
+
+
+    <div class="wrapper" id="credit">
+      <p>Copyright 2017 Student Corner Inc. Some rights reserved.</p>
+      <p>By using our website you agree to our <a href="">privacy policy</a>.</p>
     </div>
 
 
